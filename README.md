@@ -1,2 +1,2 @@
 # study
-git test
+git test xc7230
