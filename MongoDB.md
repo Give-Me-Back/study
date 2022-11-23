@@ -38,7 +38,7 @@ Collection 확인
 show collections
 ```
 ![default][img]
-[img]: img/Mongodb/1.PNG
+[img]: image/Mongodb/1.PNG
 
 ## python 연동
 ### 외부접속 허용
@@ -46,4 +46,4 @@ show collections
 vi /etc/mongod.conf
 ```
 ![default][img]
-[img]: img/Mongodb/2.PNG
+[img]: image/Mongodb/2.PNG
