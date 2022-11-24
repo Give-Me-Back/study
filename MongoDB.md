@@ -37,11 +37,11 @@ db.createCollection("test")
 Collection 확인
 show collections
 ```
-![img]: image/Mongodb/1.PNG
+![img]( image/Mongodb/1.PNG )
 
 ## python 연동
 ### 외부접속 허용
 ```
 vi /etc/mongod.conf
 ```
-![img]: image/Mongodb/2.PNG
+![img]( image/Mongodb/2.PNG )
