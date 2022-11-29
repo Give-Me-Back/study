@@ -2,4 +2,4 @@
 git test xc7230
 
 
-jaeyeol2
+jaeyeol2 "2"
