@@ -111,3 +111,9 @@ def new_data():
 ### 확인
 ![image](./image/mysql/4.png)<br/>
 ![image](./image/mysql/5.png)<br/>
+
+## sql중복된 데이터 삭제
+```sql
+-- mysql은 UPDATE 나 DELETE 시 자기 테이블의 데이타를 바로 사용 못한다. 그러므로 서브쿼리 결과를 임시테이블에 저장하여 사용해야한다.
+DELETE FROM test4 WHERE id IN (select tmp2.id from(SELECT MAX(id) as id FROM test4 GROUP BY gubun, stdDay HAVING COUNT(*) > 1) as tmp2);
+```
