@@ -17,7 +17,7 @@ def data_insert():
     db = create_engine(connection_string) #내 db에 정보를 넘겨줌
     test.to_sql(name='test', con=db, index=False) #내 db에 정보 insert
 
-url = "http://openapi.seoul.go.kr:8088/개인 시크릿키/json/TbCorona19CountStatusJCG/1/5/" #xml -> json
+url = "http://openapi.seoul.go.kr:8088/4b4878424b646c6331394362647463/json/TbCorona19CountStatusJCG/1/5/" #xml -> json
 rows=['JONGNOADD', 'JUNGGUADD', 'YONGSANADD', 'GWANGJINADD', 'DDMADD', 'JUNGNANGADD', 'SEONGBUKADD', 'GANGBUKADD', 'DOBONGADD', 'NOWONADD','EPADD','SDMADD','MAPOADD','YANGCHEONADD','GANGSEOADD','GUROADD','GEUMCHEONADD','YDPADD','DONGJAKADD','GWANAKADD','SEOCHOADD','GANGNAMADD','SONGPAADD','GANGDONGADD', 'ETCADD']
 columns = ['JONGNO', 'JUNGGU', 'YONGSAN', 'GWANGJIN', 'DDM', 'JUNGNANG', 'SEONGBUK', 'GANGBUK', 'DOBONG', 'NOWON','EP','SDM','MAPO','YANGCHEON','GANGSEO','GURO','GEUMCHEON','YDP','DONGJAK','GWANAK','SEOCHO','GANGNAM','SONGPA','GANGDONG', 'ETC']
 
