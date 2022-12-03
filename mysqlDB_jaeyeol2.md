@@ -30,7 +30,7 @@ and improve security. It checks the strength of password
 and allows the users to set only those passwords which are
 secure enough. Would you like to setup VALIDATE PASSWORD component?
 
-Press y|Y for Yes, any other key for No: [ y ]
+Press y|Y for Yes, any other key for No: [ N ]
 
 There are three levels of password validation policy:
 
