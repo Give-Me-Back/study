@@ -1,9 +1,8 @@
 # Merge
 ```shell
-git checkout week1
-git fetch
-git pull week1
-
+git branch -a
+git checkout -t remotes/origin/week1
+git switch xc7230
 git merge xc7230
 git add .
 git commit
