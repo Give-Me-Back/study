@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
-  - source:  /
-    destination: /
+  - source: /
+    destination: /app/
     overwrite: yes
 
 permissions:
@@ -12,7 +12,9 @@ permissions:
     group: root
 
 hooks:
+  BeforeInstall:
+    - location: /scripts/befor-deploy.sh
+      runas: root
   ApplicationStart:
-    - location: /deploy.sh
-      timeout: 120
+    - location: /scripts/deploy.sh
       runas: root
