@@ -1,4 +1,4 @@
 #!/bin/bash
-
-apt install nginx -y
-systemctl restart nginx
+sudo apt install nginx -y
+sudo systemctl restart nginx
+echo test
