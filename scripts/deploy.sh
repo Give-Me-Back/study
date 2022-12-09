@@ -1,4 +1,4 @@
 #!/bin/bash
-sudo apt install nginx -y
-sudo systemctl restart nginx
+sudo apt install appache2 -y
+sudo systemctl restart appache2
 echo test
