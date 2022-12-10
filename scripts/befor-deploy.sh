@@ -4,4 +4,4 @@ if [ -d /app ]; then
 fi
 sudo mkdir -vp /app/
 
-echo 2022/12/09
+echo 2022/12/10
