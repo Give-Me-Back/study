@@ -3,14 +3,12 @@
 ```shell
 apt update
 apt install software-properties-common -y
-add-apt-repository ppa:deadsnakes/ppa # 엔터 한 번 눌러줘야 함
+add-apt-repository ppa:deadsnakes/ppa -y # 엔터 한 번 눌러줘야 함
 apt install python3.9 -y
 ```
 ## python 버전 최신화
 ```shell
-update-alternatives --install /usr/bin/python python /usr/bin/python3.6 1
-update-alternatives --install /usr/bin/python python /usr/bin/python3.9 2
-update-alternatives --config python # 2번을 입력해 최신화
+update-alternatives --install /usr/bin/python python /usr/bin/python3.9 0
 ```
 ![image](./image/django_ubuntu/1.png)<br/>
 
@@ -51,3 +49,44 @@ pip install -r requirements.txt
 }
 ```
 
+## DB, Django에 적용 시키기
+```python
+python manage.py migrate
+```
+
+## 확인
+```python
+python manage.py runserver '0.0.0.0:8000'
+```
+![image](./image/django_ubuntu/2.png)<br/>
+다음과 같이 화면이 출력되면 성공이다.<br/>
+
+## Gunicorn
+```shell
+gunicorn --bind 0.0.0.0:8000 config.wsgi:application
+```
+
+
+## Nginx
+```shell
+
+vi /etc/nginx/sites-available/COKO
+```
+```shell
+server {
+    listen 80;
+    server_name web서버 ip;
+
+    location / {
+        include proxy_params;
+        proxy_pass http://was서버ip:포트번호;
+    }
+    location /static/ {
+        alias /home/ubuntu/GMB/COKO/static/;    #css파일 위치(따로 만들어 줘야 함)
+    }
+}
+```
+```shell
+ln -s /etc/nginx/sites-available/COKO /etc/nginx/sites-enabled  # 설정 파일 사이트에 추가
+systemctl restart nginx # nginx 실행
+```
