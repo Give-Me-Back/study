@@ -1,6 +1,6 @@
 #!/bin/bash
 if [ -d /app ]; then
-    sudo rm -rf /app/
+    sudo rm -rf /opt/app/
 fi
 sudo mkdir -vp /app/
 
