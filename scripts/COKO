@@ -4,7 +4,7 @@ server {
 
     location / {
         include proxy_params;
-        proxy_pass http://WAS-private-08e2bce1e8164d5b.elb.ap-northeast-2.amazonaws.com:8080;
+        proxy_pass http://WAS-private-08e2bce1e8164d5b.elb.ap-northeast-2.amazonaws.com:8000;
     }
     location /static/ {
         alias /home/ubuntu/GMB/COKO/static/;
