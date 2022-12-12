@@ -1,7 +1,5 @@
 #!/bin/bash
-if [ -d /app ]; then
-    sudo rm -rf /opt/app/
+if [ -d /home/ubuntu/app ]; then
+    sudo rm -rf /home/ubuntu/app
 fi
-sudo mkdir -vp /app/
-
-echo 2022/12/11
+sudo mkdir -vp /home/ubuntu/app
