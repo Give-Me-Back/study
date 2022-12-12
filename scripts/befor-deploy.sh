@@ -1,2 +1,5 @@
 #!/bin/bash
-echo 2022/12/12 !
+if [ -d /home/ubuntu/app ]; then
+    sudo rm -rf /home/ubuntu/app
+fi
+sudo mkdir -vp /home/ubuntu/app
