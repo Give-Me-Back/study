@@ -1,6 +1,6 @@
 # study
-git test xc7230
-
 
 jaeyeol2
+
+git test xc7230
 
