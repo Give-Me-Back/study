@@ -4,4 +4,4 @@ if [ -d /home/ubuntu/app ]; then
 fi
 sudo mkdir -vp /home/ubuntu/app
 
-echo 12/13!
+echo 12/13
