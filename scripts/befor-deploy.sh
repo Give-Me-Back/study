@@ -4,4 +4,4 @@ if [ -d /home/ubuntu/app ]; then
 fi
 sudo mkdir -vp /home/ubuntu/app
 
-echo test!
+echo test!!
