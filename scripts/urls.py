@@ -18,6 +18,7 @@ from django.urls import path
 import board.views
 
 urlpatterns = [
+    path('default/', board.views.default),
     path('admin/', admin.site.urls),
     path('', board.views.list),
     path('News', board.views.News_list),
