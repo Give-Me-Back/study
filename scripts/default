@@ -1,7 +1,7 @@
 server {
     listen 80;
     listen [::]:80;
-    server_name _;
+    server_name __;
 
     location / {
         include proxy_params;
